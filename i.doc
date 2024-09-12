@@ -1,0 +1,51 @@
+ Company:
+-- Engineer:
+--
+-- Create Date:    10:38:04 02/02/2024
+-- Design Name:
+-- Module Name:    basi_entity - Behavioral
+-- Project Name:
+-- Target Devices:
+-- Tool versions:
+-- Description:
+--
+-- Dependencies:
+--
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity basi_entity is
+    Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           and_o : out  STD_LOGIC;
+           or_o : out  STD_LOGIC;
+           nand_o : out  STD_LOGIC;
+           nor_o : out  STD_LOGIC;
+           not_o : out  STD_LOGIC;
+           xor_0 : out  STD_LOGIC);
+end basi_entity;
+
+architecture dataflow of basi_entity is
+
+begin
+and_o <= a and b;
+or_o <= a or b;
+nor_o <= a nor b;
+nand_o <= a nand b;
+not_o <= not a;
+xor_0 <= a xor b;
+end dataflow;

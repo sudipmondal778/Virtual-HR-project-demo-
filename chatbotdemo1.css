@@ -1,0 +1,192 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #5D8233;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hero Section Background Image */
+/* Hero Section Background Image */
+#hero {
+    background: url('images/hr-hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 500px;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Service Section with Images */
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-top: 10px;
+}
+
+/* Background for About Section */
+#about {
+    background: url('images/office-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Services Section */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Pricing Section */
+.pricing-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pricing-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-box p {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.pricing-box ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pricing-box ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-box .btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#contactForm {
+    margin-top: 20px;
+}
+
+/* Privacy & Terms Section */
+#privacy-policy, #terms {
+    background-color: #fafafa;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .service-cards, .pricing-boxes {
+        grid-template-columns: 1fr;
+    }
+}
